@@ -1,69 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
 
-  <title>Memory Game</title>
+  <title>Jeu de la memoire</title>
 
   <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
 </head>
 <body>
   <section class="memory-game">
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="images/fee.png" alt="fee" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="image du back" />
+    
+
+    <div class="memory-card" data-framework="cerveau">
+      <img class="front-face" src="images/cerveau.svg" alt="le cerveau">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="images/fee.png" alt="fee" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="image du back" />
+    <div class="memory-card" data-framework="cerveau">
+      <img class="front-face" src="images/cerveau.svg" alt="le cerveau">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
 
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
+    <div class="memory-card" data-framework="mandala">
+      <img class="front-face" src="images/mandala.svg" alt="mandala">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
+    <div class="memory-card" data-framework="mandala">
+      <img class="front-face" src="images/mandala.svg" alt="mandala">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
 
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
+    <div class="memory-card" data-framework="anatomie">
+      <img class="front-face" src="images/anatomie.svg" alt="anatomie">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
+    <div class="memory-card" data-framework="anatomie">
+      <img class="front-face" src="images/anatomie.svg" alt="Anatomie">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
 
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
+    <div class="memory-card" data-framework="boussole">
+      <img class="front-face" src="images/boussole.svg" alt="Boussole">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="/images/monbackface.jpg" alt="JS Badge" />
+    <div class="memory-card" data-framework="boussole">
+      <img class="front-face" src="images/boussole.svg" alt="Boussole">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
+    </div>
+
+    <div class="memory-card" data-framework="arbre">
+      <img class="front-face" src="images/arbre.svg" alt="Arbre">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
+    </div>
+    <div class="memory-card" data-framework="arbre">
+      <img class="front-face" src="images/arbre.svg" alt="Arbre">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
+    </div>
+
+    <div class="memory-card" data-framework="notion">
+      <img class="front-face" src="images/Notion.svg" alt="Notion">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
+    </div>
+    <div class="memory-card" data-framework="notion">
+      <img class="front-face" src="images/Notion.svg" alt="Notion">
+      <img class="back-face" src="images/javascript.svg" alt="image du back">
     </div>
   </section>
+  <div class="middle">
+    <button id="reprendreJeu">Nouvelle Partie</button>
+    <div id="coups">
+      Nombre de coups jouer égale à 0 
+    </div>
+  </div>
 
-  <script src="app.js"></script>
+
+  <footer class="footer">
+    <div class="inspiration-lien">
+      <p>Inspiration du projet</p>
+      <a href="https://github.com/code-sketch/memory-game">https://github.com/code-sketch/memory-game</a>
+      
+    </div>
+    <div class="name-matiere">
+      <span>Michel Komivi</span>
+      <em>Design Web A2023</em>
+    </div>
+    <div>
+      <a href="mailto:2232555@etudiant.cegepvicto.ca">
+        <img id="image" src="images/texts.png" alt="image de l'étudiant">
+      </a>
+      
+    </div>
+  </footer>
+
+
 </body>
 </html>

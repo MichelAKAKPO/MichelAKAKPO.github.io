@@ -7,7 +7,9 @@
   body {
     height: 100%;
     display: flex;
+    flex-direction: column;
     background: #060AB2;
+    
   }
   
   .memory-game {
@@ -28,6 +30,9 @@
     transform-style: preserve-3d;
     transition: transform .5s;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  #vue{
+    width: 250px;
   }
   
   .memory-card:active {
@@ -61,3 +66,43 @@
   .front-face {
     transform: rotateY(180deg);
   }
+   #image{
+    width: 50px;
+    border-radius: 50%;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f1f1f1;
+    width: 640px;
+    margin: auto;
+  }
+  .name-matiere{
+    display: flex;
+    flex-direction: column;
+  }
+  .middle{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 640px;
+    margin:auto;
+  }
+  #reprendreJeu, #coups{
+    padding: 10px;
+    font-size: 20px;
+    width: 50%;
+    border-radius: 10px;
+  }
+  #coups{
+    background-color: #f1f1f1;
+    border-left: 1px solid #333;
+  }
+  #reprendreJeu{
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: lightblue;
+}
